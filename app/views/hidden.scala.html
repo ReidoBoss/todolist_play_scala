@@ -1,0 +1,39 @@
+@import models.lists._
+
+@(lists:List[Lists])
+
+
+@main2("Lists"){
+	<a href="/lists">Go Back</a>
+	<br>
+
+
+	<main>
+		@if(lists.filter(_.isHidden==true).isEmpty){
+			<p>Looks like you have no hidden Notes. Hmm suspicous</p>
+		}else{
+			<h1>Hidden Lists:</h1>
+			<ul>
+				@for(l <- lists.filter(_.isHidden==true)){
+						<li>
+							<p>Task: <strong>@l.task</p></strong>
+							<p>Description: @l.description</p>
+							<p>Due Date: @l.due.toString.take(10)</p>
+							<p>Due Time: @l.due.toString.drop(12).take(8)</p>
+							<button onclick="hideUnhide(@l.id,false)">Unhide</button>
+							<button onclick="deleter(@l.id)">DELETE</button>
+
+						</li>
+				}
+			</ul>
+		}
+
+
+		
+	</main>
+
+
+	<script src="@routes.Assets.versioned("javascripts/lists.js")"></script>
+
+
+}

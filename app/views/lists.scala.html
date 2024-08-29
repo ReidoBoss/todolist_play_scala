@@ -1,0 +1,89 @@
+@import models.lists._
+
+@(lists:List[Lists])
+
+
+@main2("Lists"){
+
+	<h1>TodoList</h1>
+	<a href="/hidden">See Hidden Tasks</a>
+	<button onclick="logout()">LOGOUT</button>
+
+	<br>
+	<p>You Are Currently: <input class="identifier" type="text" value="Creating a List" id="currentAction"readonly></p>
+	<p>Choose: <button onclick="changeCreate()">Create</button> <button onclick="changeUpdate()">Update</button></p>
+	<div>
+		<input class="task" type="text" id="task" placeholder="Task Name">
+		<br>
+		<input type="text" class="description" id="description" placeholder="DESCRIPTION...">
+		<br>
+		<p>Due:<input type="datetime-local" id="duedate"> </p>
+		<br>
+		<button onclick="submitter()">Submit!</button>
+	</div>
+	<input type="hidden" id="idTask">
+
+<hr>
+<div class="pending">
+<h1 class="statusHeader">Pendings</h1>
+	<div class="onelist">
+		@if(lists.filter(l=> l.isHidden==false && l.status =="PENDING").isEmpty){
+			<h1>Looks like your PENDING tasks are all done! CONGRATS!</h1>
+		}else{
+			<main>
+				<ul>
+					@for(l <- lists.filter(_.isHidden==false)){
+						@if(l.status == "PENDING"){
+							<li>
+								<p>Task: <strong>@l.task</p></strong>
+								<p>Description: </p>
+								<div class="desc">@l.description</div>
+								<p>Due Date: @l.due.toString.take(10)</p>
+								<p>Due Time: @l.due.toString.drop(12).take(8)</p>
+								<button onclick="updateStatus(@l.id,'DONE')">Mark As Done</button>
+								<button onclick="hideUnhide(@l.id,true)">Hide</button>
+								<button onclick="chooseListUpdate(@l.id,'@l.task','@l.due','@l.description')">UPDATE</button>
+								<button onclick="deleter(@l.id)">DELETE</button>
+							</li>
+							
+						}
+					}
+				</ul>
+
+		}
+	</div>
+</div>
+	<div class="done">
+	<h1 class="statusHeader">Work Dones</h1>
+		<div class="onelist">
+			@if(lists.filter(l=> l.isHidden==false && l.status =="DONE").isEmpty){
+				<h1>You are either lazy or you are new in this app</h1>
+			}else{
+				<ul>
+					@for(l <- lists.filter(_.isHidden==false)){
+						@if(l.status == "DONE"){
+							<li>
+								<p>Task: <strong>@l.task</p></strong>
+								<p>Description: </p>
+								<div class="desc">@l.description</div>					
+								<p>Due Date: @l.due.toString.take(10)</p>
+								<p>Due Time: @l.due.toString.drop(12).take(8)</p>
+								<button onclick="updateStatus(@l.id,'PENDING')">Mark As Pending</button>
+								<button>Hide</button>
+								<button onclick="chooseListUpdate(@l.id,'@l.task','@l.due','@l.description')">UPDATE</button>
+								<button onclick="deleter(@l.id)">DELETE</button>
+							</li>
+								
+						}
+					}
+				</ul>
+			}
+		</div>
+	</div>	
+	</main>
+
+
+	<script src="@routes.Assets.versioned("javascripts/lists.js")"></script>
+
+
+}

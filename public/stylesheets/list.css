@@ -1,0 +1,75 @@
+*{
+	font-family: monospace;
+	font-size: 100%;
+	margin: 2px;
+	padding: 2px;
+}
+.task{
+
+	border: solid 1px;
+	text-align: center;
+	width: 30%;
+ 	background-color: #f8f8f8;
+
+}
+.onelist{
+	border: solid 0.5px;
+	border-radius: 10px;
+	text-align: left;
+	background-image: url("https://www.shutterstock.com/image-photo/blurred-image-background-many-books-600nw-1907870671.jpg");
+	backdrop-filter: blur(px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.description{
+	border: none;
+	text-align: center;
+	width: 30%;
+	height: 150px;
+ 	background-color: #f8f8f8;
+
+}
+.desc{
+	margin: 5px;
+	padding: 7px;
+	display: inline-block;
+	border: solid 1px;
+	size: 16px;
+	border-radius: 7px;
+	background-color: palegoldenrod;
+}
+/* https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm0yNTJiYXRjaDMtbmluZy1pbnN0YWdyYW1zdG9yeS0wMS5qcGc.jpg */
+.statusHeader{
+	border-radius: 10px;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	font-size: 32px;
+	border: hidden 4px;
+	background-color: palegoldenrod;
+}
+body{
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+.identifier{
+	display: inline-block;
+	border: none;
+	font-size: 20px;
+}
+button{
+	padding: 5px;
+	margin: 5px;
+
+}
+.pending{
+	width: 40%;
+	float: left;
+}
+.done{
+	width: 40%;
+	float: right;
+}

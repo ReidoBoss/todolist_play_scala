@@ -1,0 +1,139 @@
+Chapter 3 of *Essential Slick* is rich with practical use cases that demonstrate how to perform common database operations using Slick. Below, I’ll outline the key use cases covered in the chapter, along with examples of how to implement them.
+
+### 1. **Querying Data**
+   **Use Case:** Retrieve data from a database table.
+   - **Example:**
+     ```scala
+     val query = users.map(_.name) // Selects the 'name' column from the 'users' table
+     val action = query.result
+     db.run(action).map(_.foreach(println)) // Executes the query and prints each name
+     ```
+   - **Usage:** Use `.map` to project specific columns and `result` to retrieve the result set.
+
+### 2. **Filtering Data**
+   **Use Case:** Filter data based on certain conditions.
+   - **Example:**
+     ```scala
+     val query = users.filter(_.age > 18) // Filters users older than 18
+     val action = query.result
+     db.run(action).map(_.foreach(println)) // Executes and prints filtered users
+     ```
+   - **Usage:** Use `.filter` with a predicate to filter rows.
+
+### 3. **Inserting Data**
+   **Use Case:** Insert new records into a table.
+   - **Example:**
+     ```scala
+     val newUser = User(0, "Alice", 25)
+     val action = users += newUser
+     db.run(action).map(println) // Inserts the user and prints the number of rows affected
+     ```
+   - **Usage:** Use `+=` to insert a single record or `++=` for multiple records.
+
+### 4. **Updating Data**
+   **Use Case:** Update existing records.
+   - **Example:**
+     ```scala
+     val query = users.filter(_.id === 1).map(_.name)
+     val action = query.update("Bob") // Updates the name of the user with id 1 to 'Bob'
+     db.run(action).map(println) // Prints the number of rows affected
+     ```
+   - **Usage:** Use `.map` to specify the column and `update` to change the value.
+
+### 5. **Deleting Data**
+   **Use Case:** Remove records from a table.
+   - **Example:**
+     ```scala
+     val query = users.filter(_.id === 1)
+     val action = query.delete // Deletes the user with id 1
+     db.run(action).map(println) // Prints the number of rows affected
+     ```
+   - **Usage:** Use `delete` to remove records that match the criteria.
+
+### 6. **Sorting Data**
+   **Use Case:** Order the result set based on one or more columns.
+   - **Example:**
+     ```scala
+     val query = users.sortBy(_.name.asc) // Sorts users by name in ascending order
+     val action = query.result
+     db.run(action).map(_.foreach(println)) // Executes and prints sorted users
+     ```
+   - **Usage:** Use `sortBy` with `.asc` or `.desc` to sort the results.
+
+### 7. **Joining Tables**
+   **Use Case:** Combine rows from two tables based on a related column.
+   - **Example:**
+     ```scala
+     val query = for {
+       (user, order) <- users join orders on (_.id === _.userId)
+     } yield (user.name, order.product) // Joins users with orders based on user ID
+     val action = query.result
+     db.run(action).map(_.foreach { case (name, product) =>
+       println(s"$name ordered $product")
+     })
+     ```
+   - **Usage:** Use `join` to perform inner joins, `joinLeft`, or `joinRight` for outer joins.
+
+### 8. **Aggregating Data**
+   **Use Case:** Calculate aggregate values like count, sum, average, etc.
+   - **Example:**
+     ```scala
+     val query = users.filter(_.age > 18).length // Counts users older than 18
+     val action = query.result
+     db.run(action).map(println) // Prints the count
+     ```
+   - **Usage:** Use aggregation functions like `.length`, `.sum`, `.avg`, etc., on columns.
+
+### 9. **Transactions**
+   **Use Case:** Execute multiple database operations as a single transaction.
+   - **Example:**
+     ```scala
+     val insertAction = users += User(0, "Alice", 25)
+     val updateAction = users.filter(_.name === "Alice").map(_.age).update(26)
+
+     val transaction = DBIO.seq(insertAction, updateAction).transactionally
+     db.run(transaction).map(_ => println("Transaction successful"))
+     ```
+   - **Usage:** Use `DBIO.seq` to sequence actions and `transactionally` to run them within a transaction.
+
+### 10. **Compiled Queries**
+   **Use Case:** Optimize queries that are executed multiple times with different parameters.
+   - **Example:**
+     ```scala
+     val userById = Compiled((id: Rep[Int]) => users.filter(_.id === id))
+     val action = userById(1).result
+     db.run(action).map(_.foreach(println)) // Fetches and prints the user with id 1
+     ```
+   - **Usage:** Use `Compiled` to create a reusable query and pass parameters at runtime.
+
+### 11. **Handling Null Values**
+   **Use Case:** Work with nullable columns in a type-safe way.
+   - **Example:**
+     ```scala
+     val query = users.filter(_.nickname.isEmpty) // Filters users without a nickname
+     val action = query.result
+     db.run(action).map(_.foreach(println)) // Prints users with null nicknames
+     ```
+   - **Usage:** Use `Option` in case classes and handle `None` when mapping columns.
+
+### 12. **Working with Collections in Queries**
+   **Use Case:** Filter records based on a collection of values.
+   - **Example:**
+     ```scala
+     val ids = Seq(1, 2, 3)
+     val query = users.filter(_.id inSet ids) // Filters users with id 1, 2, or 3
+     val action = query.result
+     db.run(action).map(_.foreach(println)) // Prints the matching users
+     ```
+   - **Usage:** Use `inSet` or `inSeq` to work with collections.
+
+### 13. **Debugging and Logging**
+   **Use Case:** Understand the SQL generated by Slick for debugging.
+   - **Example:**
+     ```scala
+     val query = users.result
+     println(query.statements) // Prints the SQL statements generated by Slick
+     ```
+   - **Usage:** Use `.statements` to log the SQL before running the query.
+
+These use cases cover most of the basic operations you'll perform with Slick. Practice these with your own database schema to solidify your understanding. Each use case is a fundamental building block for working effectively with Slick in Scala.

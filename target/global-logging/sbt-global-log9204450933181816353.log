@@ -1,0 +1,1295 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(addDefaultCommands), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(addDefaultCommands, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(early(initialize), None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(initialize, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(boot, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(writeSbtVersion, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reload, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(onFailure loadFailed, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, None, None)[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 1.10.1 (Amazon.com Inc. Java 21.0.1)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 132.24326ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 97.395456ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.566706ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/stsagarino/Desktop/todolist_play_scala/project[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadUnit: mkEval took 6.260758ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/stsagarino/Desktop/todolist_play_scala/project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 27.48324 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project todolist_play_scala-build from plugins.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProject(todolist_play_scala-build) took 50.176133ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: finalizeProject(Project(id todolist_play_scala-build, base: /Users/stsagarino/Desktop/todolist_play_scala/project, plugins: List(<none>))) took 106.956832ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/stsagarino/Desktop/todolist_play_scala/project, returning: (todolist_play_scala-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 461.536531ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 9.937482ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/Users/stsagarino/Desktop/todolist_play_scala/project/, ...) took 576.941365ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 1320.27018ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 6.466229ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 98.541861ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 13.629833ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 691.04113ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 190.540716ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 2.085888ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from /Users/stsagarino/Desktop/todolist_play_scala/project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 4957.199529ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.007384ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory /Users/stsagarino/Desktop/todolist_play_scala[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 0.511037ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found root project root w/ remaining [0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayFilters),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayLogback),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayMinimalJava),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayPekkoHttp2Support),Set(Atom(play.sbt.PlayPekkoHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayPekkoHttpServer),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.PlayWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.routes.RoutesCompiler)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsTask)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayService)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.twirl.sbt.SbtTwirl)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(giter8.ScaffoldPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.SbtNativePackager),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.jlink.JlinkPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.AshScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemVPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemdPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.systemloader.UpstartPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.systemloader.SystemloaderPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.docker.DockerSpotifyClientPlugin),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.graalvmnativeimage.GraalVMNativeImagePlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayFilters)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayWeb),Set(Atom(play.sbt.PlayLayoutPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayLogback)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(play.sbt.PlayService),Set(Atom(play.sbt.PlayPekkoHttpServer)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(giter8.ScaffoldPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,play.sbt.PlayWeb,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayService,play.sbt.PlayFilters,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.sbt.PlayPekkoHttpServer,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,play.sbt.PlayLogback,giter8.ScaffoldPlugin,sbt.plugins.MiniDependencyTreePlugin,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.archetypes.scripts.BashStartScriptPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.packager.archetypes.scripts.BatStartScriptPlugin,com.typesafe.sbt.packager.docker.DockerPlugin,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 23.050868 ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading settings for project root from build.sbt ...[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProject(root) took 200.869448ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: finalizeProject(Project(id root, base: /Users/stsagarino/Desktop/todolist_play_scala, plugins: List(play.sbt.PlayScala))) took 227.060488ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in /Users/stsagarino/Desktop/todolist_play_scala, returning: (root)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 367.108865ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 3.479925ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/Users/stsagarino/Desktop/todolist_play_scala/, ...) took 5329.915408ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 5354.149853ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.27756ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 55.870092ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 3.112709ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 249.354515ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 108.072185ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.002924ms[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  __              __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  \ \     ____   / /____ _ __  __[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   \ \   / __ \ / // __ `// / / /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m   / /  / /_/ // // /_/ // /_/ /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  /_/  / .___//_/ \__,_/ \__, /[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m      /_/               /____/[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mVersion 3.0.5 running Java 21.0.1[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[1mPlay is run entirely by the community. Please consider contributing and/or donating:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mhttps://www.playframework.com/sponsors[0m
+[0m[[0m[0minfo[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(notifyUsersAboutShell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(iflast shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:35:8 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m		Found:    concurrent.Future[Option[models.users.Users]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m		Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:28:8 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m		Found:    concurrent.Future[Int][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m		Required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:3:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m[33mimport[0m slick.db.PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m       ^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m       value db is not a member of slick[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:5:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m slick.jdbc.PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mvalue PostgresProfiles is not a member of slick.jdbc - did you mean jdbc.PostgresProfile?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:12:24 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m	[33mval[0m [36mdbConfig[0m = dcp.get[[35mPostgresProfiles[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                       ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m	                       Not found: type PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:16:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m	[33mclass[0m [35mUsersTable[0m([36mtag[0m:[35mTag[0m) [33mextends[0m [35mTable[0m[[35mUsers[0m](tag,[31m"USERS"[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                  ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Table does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:30:49 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m	[33mdef[0m [36mget[0m([36musername[0m:[35mString[0m,[36mpassword[0m:[35mString[0m):[35mFuture[0m[[35mOption[0m[[35mUsers[0m]]=[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                ^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Option does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:3:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m[33mimport[0m slick.jdbc.PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mvalue PostgresProfiles is not a member of slick.jdbc - did you mean jdbc.PostgresProfile?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:5:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m slick.jdbc.PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mvalue PostgresProfiles is not a member of slick.jdbc - did you mean jdbc.PostgresProfile?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:12:24 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m	[33mval[0m [36mdbConfig[0m = dcp.get[[35mPostgresProfiles[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                       ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m	                       Not found: type PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:16:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m	[33mclass[0m [35mUsersTable[0m([36mtag[0m:[35mTag[0m) [33mextends[0m [35mTable[0m[[35mUsers[0m](tag,[31m"USERS"[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                  ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Table does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:30:49 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m	[33mdef[0m [36mget[0m([36musername[0m:[35mString[0m,[36mpassword[0m:[35mString[0m):[35mFuture[0m[[35mOption[0m[[35mUsers[0m]]=[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                ^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Option does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:5:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m slick.jdbc.PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mvalue PostgresProfiles is not a member of slick.jdbc - did you mean jdbc.PostgresProfile?[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:12:24 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m12 |[0m	[33mval[0m [36mdbConfig[0m = dcp.get[[35mPostgresProfiles[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                       ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m	                       Not found: type PostgresProfiles[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:16:35 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m	[33mclass[0m [35mUsersTable[0m([36mtag[0m:[35mTag[0m) [33mextends[0m [35mTable[0m[[35mUsers[0m](tag,[31m"USERS"[0m){[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                  ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Table does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E053] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:30:49 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m30 |[0m	[33mdef[0m [36mget[0m([36musername[0m:[35mString[0m,[36mpassword[0m:[35mString[0m):[35mFuture[0m[[35mOption[0m[[35mUsers[0m]]=[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                ^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mUsersRepository.this.dbConfig.profile.api.Option does not take type parameters[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:1:15 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m1 |[0m[33mpackage[0m models.users[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m  |[0m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0mNo class, trait or object is defined in the compilation unit.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0mThe incremental compiler cannot record the dependency information in such case.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m  |[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m2 |[0m[33mimport[0m play.api.db.slick.DatabaseConfigProvider[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m3 |[0m[33mimport[0m slick.jdbc.PostgresProfile[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/domain/UserAuthentication.scala:10:3 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m	ip:[35mString[0m = InetAddress.getLocalHost().getHostAddress()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	  ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m	  expression expected but [31m:[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/domain/UserAuthentication.scala:10:11 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m10 |[0m	ip:[35mString[0m = InetAddress.getLocalHost().getHostAddress()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	          ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m	          ')' expected, but '=' found[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:26:44 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m		[33mdef[0m [36m*[0m = (isSuccess,idUser,attemptAt).mapTo[[35mUsersAuth[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mSource and target product decomposition do not match.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  Source: (scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant], scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant], scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  Target: (scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant], scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant], scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant], scala.Tuple3[scala.Boolean, java.util.UUID, java.time.Instant])[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:38:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[(java.util.UUID, Boolean) => Unit, slick.dbio.NoStream,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    slick.dbio.Effect.Read][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:38:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:38:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m38 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:36:32 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			.map(u=> auth.authenticate(u.id,[31mtrue[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			                           ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                  value id is not a member of Option[models.users.Users][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query.result)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue result is not a member of slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mFound:    (query :[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.DBIOAction[Unit, slick.dbio.NoStream, slick.dbio.Effect.Read])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mRequired: slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream, Nothing][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:25 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m        Ok(Json.toJson(u))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                         ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo Json serializer found for type Unit. Try to implement an implicit Writes or Format for this type..[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    play.api.libs.json.Writes.iterableWrites2[[35mA[0m, [35mUnit[0m]([0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      /* missing */summon[Unit <:< Iterable[A]], ???)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mBut no implicit values were found that match type Unit <:< Iterable[A].[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mOne of the following imports might make progress towards fixing the problem:[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import play.api.libs.json.OFormat.oFormatFromReadsAndOWrites[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  import play.api.libs.json.Format.GenericFormat[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			.flatMap(u=> auth.authenticate(u.get.id,[31mtrue[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m			.map(auth=> auth))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			             ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			             value map is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E129] Potential Issue Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:39:2 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m39 |[0m		test[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m		^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mA pure expression does nothing in statement position; you may be omitting necessary parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E129] Potential Issue Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:2 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m37 |[0m		test[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m		^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mA pure expression does nothing in statement position; you may be omitting necessary parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:34:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m			.filter(u => u.username === username).result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			             ^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value username is not a member of slick.lifted.Rep[java.util.UUID][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:34:40 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m			.filter(u => u.username === username).result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			                                     ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mAmbiguous given instances: both [33mvalue[0m [35mBooleanColumnCanBeQueryCondition[0m in [33mobject[0m [35mCanBeQueryCondition[0m and [33mvalue[0m [35mBooleanOptionColumnCanBeQueryCondition[0m in [33mobject[0m [35mCanBeQueryCondition[0m match type slick.lifted.CanBeQueryCondition[T] of parameter wt of [33mmethod[0m [35mfilter[0m in [33mclass[0m [35mQuery[0m[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:33:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m			users returning [0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			               expression expected but [31m'.'[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:36:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			returning users.map(_.id)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			               expression expected but [31m'.'[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:36:3 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			returning users.map(_.id)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			Not found: returning[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:36:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			returning users.map(_.id)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			               ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			               expression expected but [31m'.'[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:36:3 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m			returning users.map(_.id)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m			^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m			Not found: returning[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersRepo.scala:37:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m		db.run(query.get)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m		       ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue get is not a member of slick.dbio.DBIOAction[Option[models.users.Users], slick.dbio.NoStream,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.Effect.Read][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m        println(u.length)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              value length is not a member of Option[models.users.Users][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m        println(u.get.length)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                value length is not a member of models.users.Users[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E018] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:34:20 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m          Case None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                    ^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                    expression expected but [31m=>[0m found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:34:10 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m          Case None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m          ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m          Not found: Case[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:33:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m            user.map([36mu[0m=>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m            ^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            value map is not a member of models.users.Users[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:36:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:33:17 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m            user.flatMap([36mu[0m=>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m            ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            value flatMap is not a member of models.users.Users[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:36:12 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m            Ok(Json.toJson(user))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m            ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m            Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:37:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:33:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m              auth.authenticate(user.id,[31mtrue[0m).flatMap([0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Not found: auth[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:36:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m              Ok(Json.toJson(user))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:37:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:33:46 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m              auth.authenticate(user.id,[31mtrue[0m).flatMap([0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              value flatMap is not a member of Unit[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:36:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m36 |[0m              Ok(Json.toJson(user))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:37:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m37 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:34:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m              Ok(Json.toJson(user))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:35:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m35 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:33:14 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m              Ok(Json.toJson(user))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m              ^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m              Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:34:23 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m          [33mcase[0m None => Ok(Json.obj([31m"Message"[0m -> [31m"Not Found"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Found:    play.api.mvc.Result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                       Required: scala.concurrent.Future[Any][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:40:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m40 |[0m      Future(BadRequest)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      Not found: Future[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E044] Cyclic Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:29:4 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m29 |[0m    test.test[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    Overloaded or recursive [33mmethod[0m [35mtest[0m needs return type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/stsagarino/Desktop/todolist_play_scala/conf/routes:11:1: Cannot use a method returning concurrent.Future[Vector[(Long, String)]] as a Handler for requests.[0m
+[0m[[0m[31merror[0m] [0m[0mI found:[0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    play.core.routing.HandlerInvokerFactory.passThrough[[35mplay.api.mvc.Handler[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0mBut [33mmethod[0m [35mpassThrough[0m in [33mobject[0m [35mHandlerInvokerFactory[0m does not match type play.core.routing.HandlerInvokerFactory[[0m
+[0m[[0m[31merror[0m] [0m[0m  concurrent.Future[Vector[(Long, String)]]].[0m
+[0m[[0m[31merror[0m] [0m[0mGET		/test						controllers.HomeController.test()[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E134] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:28:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m  [33mdef[0m [36mtest[0m() = Action.async{[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNone of the overloaded alternatives of [33mmethod[0m [35masync[0m in [33mtrait[0m [35mActionBuilder[0m with types[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m [A][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  (bodyParser: play.api.mvc.BodyParser[A])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    (block: play.api.mvc.Request[A] => concurrent.Future[play.api.mvc.Result]):[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      play.api.mvc.Action[A][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m (block: play.api.mvc.Request[play.api.mvc.AnyContent] =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  concurrent.Future[play.api.mvc.Result]):[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  play.api.mvc.Action[play.api.mvc.AnyContent][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m (block: => concurrent.Future[play.api.mvc.Result]):[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  play.api.mvc.Action[play.api.mvc.AnyContent][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mmatch arguments (play.api.mvc.Result)[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 2 Scala sources and 1 Java source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E172] Type Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:23:62 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m	[33mval[0m [36mroomInfo[0m = [31msql""" select "ID" from "USERS" """[0m.as[([35mUUID[0m)][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                             ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mNo given instance of type slick.jdbc.GetResult[java.util.UUID] was found for parameter getResult of [33mmethod[0m [35mas[0m in [33mclass[0m [35mSQLActionBuilder[0m[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m        [33mcase[0m a:Success(Vector) =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                      '=>' expected, but '(' found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m31 |[0m        [33mcase[0m a:Success =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Not found: type Success[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E056] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:32:15 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m        [33mcase[0m a:Success =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m               ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m               Missing type parameter for util.Success[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E040] Syntax Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:32:22 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m        [33mcase[0m a:Success(Vector) =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                      '=>' expected, but '(' found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:32:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m        [33mcase[0m Success =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Found:    util.Success.type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Required: scala.util.Try[Vector[String]][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             pattern type is incompatible with expected type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m31 |[0m      x [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      It would fail on pattern case: Failure(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:34:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m34 |[0m        [33mcase[0m Failure(f) =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Not found: Failure[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m31 |[0m      x [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      [33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m      It would fail on pattern case: Failure(_)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:31:6 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m31 |[0m      x [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m      ^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mIt would fail on pattern case: Vector0, _: Vector2[String], _: Vector3[String], _: Vector4[String], _: Vector5[String], _: Vector6[String][0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m(More unmatched cases are elided)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:32:13 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m        [33mcase[0m Success(vector) =>[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mthis case is unreachable since type Vector[String] and [33mclass[0m [35mSuccess[0m are unrelated[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:39:6 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m39 |[0m      x [33mmatch[0m {[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      Not found: x[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:40:33 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m40 |[0m        [33mcase[0m a:Vector[String] => Ok(a.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                 ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                               Found:    (writeable : Vector[String])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                               Required: play.api.http.Writeable[String][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E030] Match case Unreachable Warning: /Users/stsagarino/Desktop/todolist_play_scala/app/controllers/HomeController.scala:43:13 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m43 |[0m        [33mcase[0m a:Any => Ok(a.toString)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m             ^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m             Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:26:71 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m	[33mval[0m [36mroomInfo[0m = [31msql""" select "USERNAME" from "USERS" """[0m.as[([35mString[0m)].mapTo[[35mMeow[0m][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue mapTo is not a member of slick.sql.SqlStreamingAction[Vector[String], String, slick.dbio.Effect] - did you mean slick.sql.SqlStreamingAction[Vector[String], String, slick.dbio.Effect].map?[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:28:33 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m	[33mdef[0m [36mtest[0m = db.run(roomInfo.head._2)[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue _2 is not a member of AuthenticationRepo.this.roomInfo.ResultAction[(String, String),[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  slick.dbio.NoStream, slick.dbio.Effect][0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mExporting web-assets:todolist-stsagarino[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:27:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m	[33mval[0m [36mroomInfo[0m = [31msqlu""" UPDATE "USERS_AUTH" SET "ATTEMPT_AT"=[0m${Instant.now}[31m WHERE "ID_USERS" = 150ef3e7-35c3-4b43-a93f-06871c36a84e  """[0m.as[([35mString[0m,[35mString[0m)][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                              ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    java.time.Instant[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: slick.jdbc.TypedParameter[?][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/stsagarino/Desktop/todolist_play_scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /Users/stsagarino/Desktop/todolist_play_scala/app/models/repository/UsersAuthRepo.scala:27:63 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m	[33mval[0m [36mroomInfo[0m = [31msqlu""" UPDATE "USERS_AUTH" SET "ATTEMPT_AT"=[0m${Instant.now}[31m WHERE "ID_USERS" = 150ef3e7-35c3-4b43-a93f-06871c36a84e  """[0m.as[([35mString[0m,[35mString[0m)][0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m	                                                              ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Found:    java.time.Instant[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                  Required: slick.jdbc.TypedParameter[?][0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m

@@ -1,0 +1,14 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <title>@title</title>
+    <head>
+        <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")">
+    </head>
+    <body>
+
+        @content
+
+    </body>
+</html>

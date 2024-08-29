@@ -1,0 +1,25 @@
+@()
+
+@main("Todo List") {
+  <h1 class="welcome">Todo List App</h1>
+  <main>
+    <div class="login">
+      <h1 class="head">Register</h1>
+      <input class="error" type="text" id="error" readonly>
+      <hr>
+      <input type="text" name="username" id="username" placeholder="Username">
+      <br>
+      <input type="password" name="password" id="password" placeholder="Password">
+      <br>
+      <button onclick="register()">Submit</button>
+      <br>
+      <a href="/">Already Have An Account?</a>
+    </div>
+
+  </main>
+
+
+  <script src="@routes.Assets.versioned("javascripts/register.js")"></script>
+
+}
+

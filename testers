@@ -1,0 +1,28 @@
+2024-08-29T02:52:57.495660Z
+
+
+
+user adder/auther
+{
+	"username":"stephen",
+	"password":"gwapo"
+}
+
+add list json:
+{
+	"task":"TEST TASK BROTHER",
+	"status" : "PENDING",
+	"due" :	"2024-08-29T02:52:57.495660Z"
+}
+
+{
+	"task":"TEST TASK BROTHER",
+	"status" : "ONWORK",
+	"due" :	"2024-08-29T02:52:57.495660Z"
+}
+
+{
+	"task":"TEST TASK BROTHER",
+	"status" : "DONE",
+	"due" :	"2024-08-29T02:52:57.495660Z"
+}

@@ -1,0 +1,70 @@
+*{
+	font-family: monospace;
+	font-size: 120%;
+	margin: 0;
+	padding: 0;	
+}
+body{
+
+	background-image: url("https://marketplace.canva.com/EAFHeEQFfvc/1/0/1600w/canva-pale-green-%26-pink-retro-mockup-ui-organizer-desktop-wallpaper-XwwcDoqlvAE.jpg");
+	height: 100%;
+	backdrop-filter: blur(5px);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.head{
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%!important;
+}
+.error{
+	font-size: 80%;
+	color: red;
+	background: none;
+}
+
+
+
+.welcome{
+	text-align: center;
+	border: none 5px;
+	border-radius: 15px;
+	margin-bottom: 5%;
+	font-size: 64px;
+}
+a{
+	display: inline-block;
+	font-size: 50%;
+	margin-bottom: 10px;
+}
+main{
+	text-align: center;
+}
+.login{
+	display: inline-block;
+	border: none 4px;
+	width: 40%;
+	background: rgba(238, 232, 170,0.5) ;
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 20%;
+}
+
+input{
+	margin: 10px;
+	width: 60%;
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	border: none 4px;
+	border-radius: 5px;
+}
+button{
+	padding: 10px;
+	margin: 10px;
+	border: none;
+	padding: 4px;
+	border-radius: 10px;
+}
